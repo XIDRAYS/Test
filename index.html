@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Docement</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+  </head>
+  <body>
+    <script src="JS/script.js" defer></script>
+    <div class="container">
+      <section class="tools-board">
+        <div class="row">
+          <label class="title">Фигуры</label>
+          <ul class="options">
+            <li class="option tool" id="rectangle">
+              <img src="image/rectangle.svg" alt="">
+              <span>Квадрат</span>
+            </li>
+            <li class="option tool" id="circle">
+              <img src="image/circle.svg" alt="">
+              <span>Круг</span>
+            </li>
+            <li class="option tool" id="triangle">
+              <img src="image/triangle.svg" alt="">
+              <span>Треугольник</span>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="fill-color">
+              <label for="fill-color">Заполнение</label>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <label class="title">Настройки</label>
+          <ul class="options">
+            <li class="option active tool" id="brush">
+              <img src="image/brush.svg" alt="">
+              <span>Кисть</span>
+            </li>
+            <li class="option tool" id="eraser">
+              <img src="image/eraser.svg" alt="">
+              <span>Ластик</span>
+            </li>
+            <li class="option">
+              <input type="range" id="size-slider" min="1" max="30" value="5">
+            </li>
+          </ul>
+        </div>
+        <div class="row colors">
+          <label class="title">Цвет</label>
+          <ul class="options">
+            <li class="option"></li>
+            <li class="option selected"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option">
+              <input type="color" id="color-picker" value="#4A98F7">
+            </li>
+          </ul>
+        </div>
+        <div class="row buttons">
+          <button class="clear-canvas">Очистить содержимое</button>
+          <button class="save-img">Сохранение</button>
+        </div>
+      </section>
+      <section class="drawing-board">
+        <canvas></canvas>
+      </section>
+    </div>
+    
+  </body>
+</html>
